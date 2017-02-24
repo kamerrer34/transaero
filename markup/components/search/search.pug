@@ -1,0 +1,6 @@
+mixin search(data)
+	+b.search
+		+e.FORM.form
+			+e.INPUT.input(type='text' placeholder="поиск по сайту")
+			+e.BUTTON.button
+				!= pugHelpers.Icon.call(locals, {iconName: 'loupe', className: 'search__icon'})

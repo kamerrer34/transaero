@@ -1,0 +1,56 @@
+.form{
+	display: block;
+
+	&__input{
+		@extend .search__input;
+		width: 100%;
+		padding: 0 15px;
+		margin-bottom: 15px;
+
+		&.error:not(:focus){
+			border-color: #e42644;
+		}
+
+		&:focus + .form__errors{
+			display: none;
+		}
+	}
+
+	&__button{
+		width: 100%;
+		height: 32px;
+
+		line-height: 30px;
+		color: #fff;
+
+		border: none;
+		background-color: #0c4da2;
+		outline: none;
+		
+		&:disabled{
+			background-color: #ccc;
+		}
+	}
+
+	&__input-wrap{
+		position: relative;
+
+		display: inline;
+	}
+
+	&__error{
+		position: absolute;
+		top: 20px;
+		left: 0;
+
+		display: none;
+		margin-top: 5px;
+
+		font-size: 12px;
+		color: #e42644;
+
+		&.visible{
+			display: block;
+		}
+	}
+}

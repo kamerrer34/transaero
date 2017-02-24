@@ -1,0 +1,36 @@
+.nav{
+	&__list{
+		@include list-reset();
+	}
+
+	&__item{
+		display: inline-block;
+
+		font-size: 12px;
+		font-weight: bold;
+		vertical-align: top;
+		&:not(:last-child){
+			margin-right: 24px;
+
+			@include below(567px){
+				margin-right: 15px;
+			}
+		}
+	}
+
+	&__link{
+		color: #0c4da2;
+		text-decoration: none;
+	}
+
+	&__text{
+		margin-right: 5px;
+	}
+
+	&__icon{
+		display: inline-block;
+		margin-right: 5px;
+
+		vertical-align: middle;
+	}
+}

@@ -1,0 +1,13 @@
+mixin nav(data)
+	+b.nav
+		+e.UL.list
+			each item in data
+				+e.LI.item
+					if item.text
+						+e.SPAN.text #{item.text}
+
+					+e.A.link(href=`${item.url}` class=`${item.class}`)
+						if item.icon
+							!= pugHelpers.Icon.call(locals, {iconName: item.icon, className: 'nav__icon'})
+
+						| #{item.link}

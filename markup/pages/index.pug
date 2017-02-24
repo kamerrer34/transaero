@@ -1,0 +1,11 @@
+extends ../layouts/default
+
+include ../components/tabs/tabs
+
+block vars
+	-pageSettings.title = 'Главная';
+
+block content
+	+b.content
+		+e.inner
+			+tabs()

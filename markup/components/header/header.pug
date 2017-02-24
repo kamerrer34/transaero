@@ -1,0 +1,9 @@
+include ../header-top/header-top
+include ../header-bottom/header-bottom
+include ../popup/popup
+
+mixin header(data)
+	+b.HEADER.header()&attributes(attributes)
+		+header-top()
+		+header-bottom()
+		+popup()

@@ -1,0 +1,9 @@
+include ../form/form
+
+mixin popup(data)
+	+b.popup-wrap.js-popup#reg
+		+b.popup
+			+e.BUTTON.close.js-close-popup(type="button")
+				!= pugHelpers.Icon.call(locals, {iconName: 'cross', className: 'popup__close-icon'})
+
+			+form()

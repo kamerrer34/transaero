@@ -1,0 +1,20 @@
+include ../slider/slider
+
+
+mixin tabs(data)
+	+b.tabs.js-tabs
+		+e.head.js-tabs-head
+			+e.A.link.active(href='#first') Возможности
+			+e.A.link(href='#second') Информация
+			+e.A.link(href='#third') Привилегии
+
+		+e.content.js-tabs-content
+			+e.box#first.active
+				+slider(slider.main)
+
+			+e.box#second контент 2
+			+e.box#third контент 3
+
+
+
+

@@ -1,0 +1,14 @@
+mixin form(data)
+	+b.FORM.form.js-validation-form
+		+e.input-wrap
+			+e.INPUT.input(type="email" placeholder="Email" required)
+			+e.SPAN.errors
+				+e.SPAN.error.js-valueMissing Заполните поле
+				+e.SPAN.error.js-typeMismatch Поле заполнено неверно
+
+		+e.input-wrap
+			+e.INPUT.input(type="password" placeholder="Пароль" required)
+			+e.SPAN.errors
+				+e.SPAN.error.js-valueMissing Заполните поле
+
+		+e.BUTTON.button(type="submit") Войти

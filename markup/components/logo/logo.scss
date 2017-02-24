@@ -1,0 +1,9 @@
+.logo{
+	position: absolute;
+	top: 20px;
+	left: 15px;
+
+	@include below(567px){
+		top: 15px;
+	}
+}

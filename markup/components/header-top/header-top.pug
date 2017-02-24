@@ -1,0 +1,11 @@
+include ../nav/nav
+
+mixin header-top(data)
+	+b.header-top
+		+e.inner
+			+e.right
+				+nav(nav.right)
+
+			+e.left
+				+nav(nav.left)
+

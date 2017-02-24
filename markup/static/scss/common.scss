@@ -1,0 +1,26 @@
+// Common styles of the project
+
+*,
+*::before,
+*::after{
+	box-sizing: border-box;
+}
+
+html, body{
+	height: 100%;
+	font-family: 'PT Sans', sans-serif;
+	color: #000;
+}
+
+.content{
+	&__inner{
+		padding: 30px;
+		max-width: 1160px;
+		margin: auto;
+
+		@include below(1023px){
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+	}
+}

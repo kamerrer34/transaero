@@ -1,0 +1,49 @@
+.tabs{
+	position: relative;
+
+	&__head{
+		@include clearfix;
+		position: absolute;
+		top: -90px;
+		left: 34.7%;
+
+		@include below(639px){
+			top: -74px;
+			left: 0;
+		}
+	}
+
+	&__link{
+		display: block;
+		float: left;
+		padding: 8px 13px 29px;
+
+		font-size: 16px;
+		color: #000;
+		text-decoration: none;
+
+		border: 1px solid transparent;
+		border-top-width: 2px;
+
+		@include below(567px){
+			padding-right: 8px;
+			padding-bottom: 15px;
+			padding-left: 8px;
+
+			font-size: 14px;
+		}
+
+		&.active{
+			color: #e42644;
+
+			border-color: #e42644 #c8c8c8 #fff #c8c8c8;
+		}
+	}
+
+	&__box{
+		display: none;
+		&.active{
+			display: block;
+		}
+	}
+}

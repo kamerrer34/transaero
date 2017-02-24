@@ -1,0 +1,9 @@
+include ../logo/logo
+include ../search/search
+include ../tabs/tabs
+
+mixin header-bottom(data)
+	+b.header-bottom
+		+e.inner
+			+logo()
+			+search()

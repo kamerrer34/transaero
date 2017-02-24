@@ -1,0 +1,48 @@
+.search{
+	position: absolute;
+	top: 27px;
+	right: 15px;
+
+	@include below(567px){
+		top: 70px;
+		left: 15px;
+	}
+
+	&__input{
+		width: 250px;
+		height: 32px;
+		padding-right: 30px;
+		padding-left: 8px;
+
+		font-size: 14px;
+		line-height: 32px;
+
+		border: 1px solid #c8c8c8;
+		outline: none;
+
+		@include below(567px){
+			width: 290px;
+		}
+
+		&::placeholder{
+			color: #b2b2b2;
+		}
+	}
+
+	&__button{
+		position: absolute;
+		top: 0;
+		right: 0;
+
+		width: 32px;
+		height: 32px;
+
+		border: none;
+		background: none;
+		outline: none;
+	}
+
+	&__icon{
+		@include center();
+	}
+}

@@ -1,0 +1,18 @@
+{
+    "dependencies": {
+        "bemto.pug": "^2.0.0",
+        "jquery": "^3.1.0",
+        "svg4everybody": "^2.1.0"
+    },
+    "devDependencies": {
+        "gulp-csscomb": "^3.0.8",
+        "postcss-sorting": "^2.0.1",
+        "postcss-scss": "^0.4.0",
+        "eslint": "^3.12.1"
+    },
+    "scripts": {
+        "init": "node ./tars/user-tasks/helpers/init-project.js",
+        "lint:eslint": "eslint markup/components --cache",
+        "precommit": "npm run lint:eslint --silent"
+    }
+}

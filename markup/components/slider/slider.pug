@@ -1,0 +1,9 @@
+mixin slider(data)
+	+b.slider.js-slider
+		+e.BUTTON.button._prev.js-slider-prev(type="button")
+		+e.BUTTON.button._next.js-slider-next(type="button")
+
+		+e.list.js-slider-list
+			each item in data
+				+e.slide
+					+e.IMG.img(src=`${item.url}` alt="")
